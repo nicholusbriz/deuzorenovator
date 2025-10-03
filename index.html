@@ -157,30 +157,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="info-card glow-card">
-                        <div class="card-header">
-                            <i class="fas fa-music"></i>
-                            <h3>Musical Style</h3>
-                        </div>
-                        <div class="info-grid">
-                            <div class="info-item">
-                                <strong>Influences:</strong>
-                                <span>A Pass, Ragga Dancehall, Afrobeat pioneers</span>
-                            </div>
-                            <div class="info-item">
-                                <strong>Signature Sound:</strong>
-                                <span>Emotional storytelling with vibrant rhythms</span>
-                            </div>
-                            <div class="info-item">
-                                <strong>Themes:</strong>
-                                <span>Love, resilience, cultural pride</span>
-                            </div>
-                            <div class="info-item">
-                                <strong>Production:</strong>
-                                <span>Mattcom Records, Anest Beats, Baston Hits</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="about-image zoom-in">
                     <div class="image-container">
@@ -201,99 +177,12 @@
             <h2 class="section-title">Music & Discography</h2>
             <p class="section-subtitle">Stream the hottest tracks from Uganda's finest</p>
             
-            <!-- Featured Track -->
-            <div class="featured-track glow-card">
-                <div class="featured-info">
-                    <div class="badge">Latest Release</div>
-                    <h3>EBIDONGO</h3>
-                    <p>2025 • Latest Sensation</p>
-                    <div class="featured-actions">
-                        <button class="btn-primary">
-                            <i class="fab fa-soundcloud"></i> Stream Now
-                        </button>
-                        <button class="btn-outline">
-                            <i class="fas fa-share-alt"></i> Share
-                        </button>
-                    </div>
-                </div>
-                <div class="featured-artwork">
-                    <div class="artwork-container">
-                        <img src="images/deuzo5.jpg" alt="EBIDONGO Artwork">
-                        <div class="play-overlay">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- SoundCloud Player Container -->
+            <div id="soundcloudPlayer" class="soundcloud-player" style="display: none;"></div>
 
             <!-- Music Grid -->
-            <div class="music-grid">
-                <div class="track-card glow-card">
-                    <div class="track-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h4>Mataala</h4>
-                    <p>2017 • Breakout Hit</p>
-                    <div class="track-actions">
-                        <button class="btn-small"><i class="fas fa-play"></i></button>
-                        <button class="btn-small"><i class="fas fa-download"></i></button>
-                    </div>
-                </div>
-                <div class="track-card glow-card">
-                    <div class="track-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h4>Miss Yo Love</h4>
-                    <p>2019 • International Hit</p>
-                    <div class="track-actions">
-                        <button class="btn-small"><i class="fas fa-play"></i></button>
-                        <button class="btn-small"><i class="fas fa-download"></i></button>
-                    </div>
-                </div>
-                <div class="track-card glow-card">
-                    <div class="track-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h4>Sweet Love</h4>
-                    <p>2023 • Romantic Anthem</p>
-                    <div class="track-actions">
-                        <button class="btn-small"><i class="fas fa-play"></i></button>
-                        <button class="btn-small"><i class="fas fa-download"></i></button>
-                    </div>
-                </div>
-                <div class="track-card glow-card">
-                    <div class="track-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h4>Loving a Bad Man</h4>
-                    <p>2023 • Emotional Ballad</p>
-                    <div class="track-actions">
-                        <button class="btn-small"><i class="fas fa-play"></i></button>
-                        <button class="btn-small"><i class="fas fa-download"></i></button>
-                    </div>
-                </div>
-                <div class="track-card glow-card">
-                    <div class="track-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h4>Na Na Na</h4>
-                    <p>2023 • Party Anthem</p>
-                    <div class="track-actions">
-                        <button class="btn-small"><i class="fas fa-play"></i></button>
-                        <button class="btn-small"><i class="fas fa-download"></i></button>
-                    </div>
-                </div>
-                <div class="track-card glow-card">
-                    <div class="track-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h4>Zikarugaho</h4>
-                    <p>2023 • Dancehall Banger</p>
-                    <div class="track-actions">
-                        <button class="btn-small"><i class="fas fa-play"></i></button>
-                        <button class="btn-small"><i class="fas fa-download"></i></button>
-                    </div>
-                </div>
+            <div class="music-grid" id="musicGrid">
+                <!-- Tracks will be dynamically inserted here -->
             </div>
 
             <div class="music-cta">
@@ -314,49 +203,12 @@
             <h2 class="section-title">Music Videos</h2>
             <p class="section-subtitle">Visual experiences that bring the music to life</p>
             
-            <div class="video-grid">
-                <div class="video-card glow-card">
-                    <div class="video-thumbnail">
-                        <img src="https://picsum.photos/seed/video1/400/250" alt="EBIDONGO Video">
-                        <div class="play-overlay">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <h4>EBIDONGO</h4>
-                    <p>2025 • Latest Release</p>
-                    <div class="video-stats">
-                        <span><i class="fas fa-eye"></i> 250K views</span>
-                        <span><i class="fas fa-heart"></i> 15K likes</span>
-                    </div>
-                </div>
-                <div class="video-card glow-card">
-                    <div class="video-thumbnail">
-                        <img src="https://picsum.photos/seed/video2/400/250" alt="Mataala Video">
-                        <div class="play-overlay">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <h4>Mataala</h4>
-                    <p>2017 • Breakout Hit</p>
-                    <div class="video-stats">
-                        <span><i class="fas fa-eye"></i> 1.2M views</span>
-                        <span><i class="fas fa-heart"></i> 85K likes</span>
-                    </div>
-                </div>
-                <div class="video-card glow-card">
-                    <div class="video-thumbnail">
-                        <img src="https://picsum.photos/seed/video3/400/250" alt="Miss Yo Love Video">
-                        <div class="play-overlay">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <h4>Miss Yo Love</h4>
-                    <p>2019 • International Hit</p>
-                    <div class="video-stats">
-                        <span><i class="fas fa-eye"></i> 850K views</span>
-                        <span><i class="fas fa-heart"></i> 45K likes</span>
-                    </div>
-                </div>
+            <!-- Video Player Container -->
+            <div id="videoPlayerContainer" class="video-player-container" style="display: none;"></div>
+
+            <!-- Video Grid -->
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos will be dynamically inserted here -->
             </div>
 
             <div class="video-cta">
@@ -459,7 +311,7 @@
                             </div>
                             <div class="info-item">
                                 <strong>Promotions:</strong>
-                                <span>MokAloziousPromotions</span>
+                                <span>Atbriz Promotions</span>
                             </div>
                             <div class="info-item">
                                 <strong>Studio:</strong>
