@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deuzo Renovator - Official Website | Ugandan Afrobeats Artist</title>
+  <meta name="description" content="Official website of Deuzo Renovator - Ugandan Afrobeats, Dancehall & Ragga Artist. Listen to hits like Mataala, Miss Yo Love, and EBIDONGO.">
+  <meta name="keywords" content="Deuzo Renovator, Ugandan music, Afrobeats, Dancehall, Ragga, Mataala, Miss Yo Love, EBIDONGO">
+  <meta property="og:title" content="Deuzo Renovator - Official Website">
+  <meta property="og:description" content="Ugandan Afrobeats, Dancehall & Ragga Artist">
+  <meta property="og:image" content="images/deuzo5.jpg">
+  <meta property="og:type" content="website">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://picsum.photos">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>Deuzo Renovator</h2>
+        <span class="logo-subtitle">Official</span>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#music" class="nav-link">Music</a>
+        <a href="#videos" class="nav-link">Videos</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button id="darkModeToggle" class="btn-darkmode"><i class="fas fa-moon"></i></button>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+    <div class="hero-content fade-in">
+      <div class="badge">Ugandan Music Star</div>
+      <h1>Deuzo <span class="highlight">Renovator</span></h1>
+      <p class="tagline">Afrobeats • Dancehall • Ragga</p>
+      <p class="hero-text">Bringing you the best of East African vibes with hits like <strong>"Mataala"</strong>, <strong>"Miss Yo Love"</strong>, and the latest sensation <strong>"EBIDONGO"</strong></p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="scrollToSection('music')">
+          <i class="fas fa-play-circle"></i> Listen Now
+        </button>
+        <button class="btn-secondary" onclick="scrollToSection('videos')">
+          <i class="fas fa-video"></i> Watch Videos
+        </button>
+        <button class="btn-outline" onclick="scrollToSection('about')">
+          <i class="fas fa-user"></i> My Story
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">25+</span>
+          <span class="stat-label">Tracks</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10M+</span>
+          <span class="stat-label">Streams</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2016</span>
+          <span class="stat-label">Since</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image slide-in">
+      <div class="image-container">
+        <img src="images/deuzo5.jpg" alt="Deuzo Renovator - Ugandan Music Artist" class="artist-image" loading="lazy" />
+        <div class="image-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Deuzo</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <div class="info-card glow-card">
+            <div class="card-header">
+              <i class="fas fa-user"></i>
+              <h3>Artist Identity</h3>
+            </div>
+            <div class="info-grid">
+              <div class="info-item">
+                <strong>Real Name:</strong>
+                <span>Tumutegyerize Deus</span>
+              </div>
+              <div class="info-item">
+                <strong>Born:</strong>
+                <span>June 6, 1997 • Ibanda District, Uganda</span>
+              </div>
+              <div class="info-item">
+                <strong>Genres:</strong>
+                <span>Afrobeats, Dancehall, Ragga, Afro-fusion</span>
+              </div>
+              <div class="info-item">
+                <strong>Languages:</strong>
+                <span>Runyankole, English, Luganda</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-card glow-card">
+            <div class="card-header">
+              <i class="fas fa-timeline"></i>
+              <h3>Career Journey</h3>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="year">2016</span>
+                <div class="timeline-content">
+                  <h4>Debut Single</h4>
+                  <p>"Gumpe" released, marking the beginning</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="year">2017</span>
+                <div class="timeline-content">
+                  <h4>Breakout Hit</h4>
+                  <p>"Mataala" gains nationwide recognition</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="year">2019</span>
+                <div class="timeline-content">
+                  <h4>International Buzz</h4>
+                  <p>"Miss Yo Love" crosses borders</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="year">2020-2025</span>
+                <div class="timeline-content">
+                  <h4>Rising Star</h4>
+                  <p>Multiple hits and collaborations cementing legacy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image zoom-in">
+          <div class="image-container">
+            <img src="images/deuzo4.jpg" alt="Deuzo Renovator Performing Live" class="artist-image" loading="lazy" />
+            <div class="experience-badge">
+              <span class="exp-years">8+</span>
+              <span class="exp-text">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Music -->
+  <section id="music" class="music">
+    <div class="container">
+      <h2 class="section-title">Music & Discography</h2>
+      <p class="section-subtitle">Stream the hottest tracks from Uganda's finest</p>
+      
+      <!-- Audio Player -->
+      <div class="audio-player floating-player glow-card">
+        <div class="player-header">
+          <h3><i class="fas fa-waveform"></i> Now Playing</h3>
+          <div class="track-info">
+            <h4 id="currentTrack">Select a track to play</h4>
+            <p id="currentArtist">Deuzo Renovator</p>
+          </div>
+        </div>
+        <div class="player-controls">
+          <button id="prevBtn" class="control-btn" title="Previous"><i class="fas fa-backward"></i></button>
+          <button id="playBtn" class="play-btn" title="Play/Pause"><i class="fas fa-play"></i></button>
+          <button id="nextBtn" class="control-btn" title="Next"><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress" id="progress"></div>
+          </div>
+          <div class="time-display">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+        </div>
+        <div class="player-extra">
+          <div class="volume-control">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" id="volume" min="0" max="100" value="50" title="Volume" />
+          </div>
+          <div class="key-hint">
+            <small>Space: Play/Pause • ←→: Navigate</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading State -->
+      <div class="loading-state" id="audioLoading" style="display: none;">
+        <i class="fas fa-spinner fa-spin"></i> Loading track...
+      </div>
+
+      <!-- Music Grid -->
+      <div class="music-grid" id="musicGrid"></div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section id="videos" class="videos">
+    <div class="container">
+      <h2 class="section-title">Music Videos</h2>
+      <p class="section-subtitle">Visual experiences that bring the music to life</p>
+      
+      <div class="video-player-container">
+        <div class="video-player glow-card">
+          <video id="mainVideo" controls poster="https://picsum.photos/seed/video/800/450">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-info">
+          <h3 id="currentVideoTitle">EBIDONGO</h3>
+          <p id="currentVideoDesc">2025 • Latest Release</p>
+          <div class="video-actions">
+            <button class="btn-small" onclick="toggleFullscreen()">
+              <i class="fas fa-expand"></i> Fullscreen
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Loading State -->
+      <div class="loading-state" id="videoLoading" style="display: none;">
+        <i class="fas fa-spinner fa-spin"></i> Loading video...
+      </div>
+
+      <!-- Video Grid -->
+      <div class="video-grid" id="videoGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Connect With Deuzo</h2>
+      <p class="section-subtitle">Get in touch for bookings, collaborations, or just to say hello</p>
+      
+      <div class="contact-content">
+        <div class="social-links">
+          <h3>Follow the Journey</h3>
+          <div class="social-grid">
+            <a href="https://youtube.com/@DeuzoRenovatorOfficial" class="social-link youtube" target="_blank" rel="noopener">
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+              <small>@DeuzoRenovatorOfficial</small>
+            </a>
+            <a href="https://tiktok.com/@deuzorenovator" class="social-link tiktok" target="_blank" rel="noopener">
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
+              <small>@deuzorenovator</small>
+            </a>
+            <a href="https://twitter.com/@renovator_deuzo" class="social-link twitter" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+              <small>@renovator_deuzo</small>
+            </a>
+            <a href="#" class="social-link instagram" target="_blank" rel="noopener">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+              <small>Coming Soon</small>
+            </a>
+          </div>
+          
+          <div class="management-info glow-card">
+            <div class="card-header">
+              <i class="fas fa-briefcase"></i>
+              <h3>Management & Team</h3>
+            </div>
+            <div class="info-grid">
+              <div class="info-item">
+                <strong>Management:</strong>
+                <span>DeuzoRenovatorMusic</span>
+              </div>
+              <div class="info-item">
+                <strong>Promotions:</strong>
+                <span>MokAloziousPromotions</span>
+              </div>
+              <div class="info-item">
+                <strong>Studio:</strong>
+                <span>Mattcom Records, Ibanda</span>
+              </div>
+              <div class="info-item">
+                <strong>Producers:</strong>
+                <span>Anest Beats Snr, Baston Hits, Anest Pan Beats</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <div class="form-header glow-card">
+            <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
+            <p>Looking for collaborations, bookings, or just want to connect? Reach out!</p>
+          </div>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+              <select>
+                <option value="">Select Purpose</option>
+                <option value="booking">Booking</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="message">Fan Message</option>
+                <option value="other">Other</option>
+              </select>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+              <i class="fas fa-comment"></i>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mini Sticky Audio Player -->
+  <div class="mini-player" id="miniPlayer">
+    <div class="mini-info">
+      <span id="miniTrack">No track playing</span>
+    </div>
+    <div class="mini-controls">
+      <button id="miniPlayBtn" title="Play/Pause"><i class="fas fa-play"></i></button>
+      <button id="miniNextBtn" title="Next"><i class="fas fa-forward"></i></button>
+      <button class="mini-close-btn" title="Close"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Deuzo Renovator</h3>
+          <p>Ugandan Afrobeats, Dancehall & Ragga Artist</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#music">Music</a>
+          <a href="#videos">Videos</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-legal">
+          <p>&copy; 2024 Deuzo Renovator. All rights reserved.</p>
+          <p>Official Website • Proudly Ugandan</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
