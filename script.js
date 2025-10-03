@@ -51,58 +51,221 @@ window.addEventListener('scroll', () => {
 });
 
 // ======================
-// TRACKS (your list)
+// TRACKS with SoundCloud Embed Placeholders
 // ======================
 const tracks = [
-  { name: 'Gumpe', year: '2016', type: 'Debut Single', filename: 'Gumpe.mp3' },
-  { name: 'Mataala', year: '2017', type: 'Breakout Hit', filename: 'mataala.mp3' },
-  //{ name: 'OK Hows Gala', year: '2018', type: 'Single', filename: 'ok-hows-gala.mp3' },
-  //{ name: 'Born A Winner', year: '2018', type: 'Single', filename: 'born-a-winner.mp3' },
- // { name: 'Mukyidongo', year: '2018', type: 'Single', filename: 'mukyidongo.mp3' },
-  //{ name: 'Make Me Know', year: '2018', type: 'Single', filename: 'make-me-know.mp3' },
- // { name: 'Cation You', year: '2018', type: 'Single', filename: 'cation-you.mp3' },
- // { name: 'Onanagiza Nana', year: '2019', type: 'Emotional Ballad', filename: 'onanagiza-nana.mp3' },
-  //{ name: 'Miss Yo Love', year: '2019', type: 'International Hit', filename: 'miss-yo-love.mp3' },
-  { name: 'Sweet Love', year: '2023', type: 'Romantic Anthem', filename: 'sweet-love.mp3' },
- // { name: 'Kikahandiikwa', year: '2023', type: 'Dancehall Banger', filename: 'kikahandiikwa.mp3' },
-  //{ name: 'Kokasemera', year: '2023', type: 'ft. Shasha bei African', filename: 'kokasemera.mp3' },
-  //{ name: 'Ku MAZZI', year: '2024', type: 'ft. Webby Snr & Precocious', filename: 'ku-mazzi.mp3' },
-  { name: 'Totally', year: '2024', type: 'HD Video', filename: 'totally.mp3' },
-  { name: 'EBIDONGO', year: '2025', type: 'Latest Release', filename: 'ebidongo.mp3' },
-  { name: 'EASY', year: '2025', type: 'Official Video', filename: 'easy.mp3' },
-  { name: 'Loving A Bad Man', year: '2023', type: 'Single', filename: 'loving-a-bad-man.mp3' },
- // { name: 'Zika', year: '2023', type: 'Single', filename: 'zika.mp3' },
- // { name: 'Semera', year: '2023', type: 'Single', filename: 'semera.mp3' },
- // { name: 'Rugaho', year: '2023', type: 'Single', filename: 'rugaho.mp3' },
-  { name: 'Na Na Na', year: '2023', type: 'Single', filename: 'Nanana.mp3' },
-  //{ name: 'Karugaho', year: '2023', type: 'Single', filename: 'karugaho.mp3' },
-  //{ name: 'Zikanduka', year: '2023', type: 'Single', filename: 'zikanduka.mp3' },
-  //{ name: 'Ugaho', year: '2023', type: 'Single', filename: 'ugaho.mp3' },
-  //{ name: 'Kutemwa', year: '2023', type: 'Single', filename: 'kutemwa.mp3' }
+  { 
+    name: 'Gumpe', 
+    year: '2016', 
+    type: 'Debut Single', 
+    embedCode: '<!-- REPLACE_WITH_GUMPE_SOUNDCLOUD_EMBED --><div style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;"><p>SoundCloud embed for Gumpe will appear here</p><p>Upload to SoundCloud and replace this placeholder</p></div>'
+  },
+  { 
+    name: 'Mataala', 
+    year: '2017', 
+    type: 'Breakout Hit', 
+    embedCode: '<!-- REPLACE_WITH_MATAALA_SOUNDCLOUD_EMBED --><div style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;"><p>SoundCloud embed for Mataala will appear here</p><p>Upload to SoundCloud and replace this placeholder</p></div>'
+  },
+  { 
+    name: 'Sweet Love', 
+    year: '2023', 
+    type: 'Romantic Anthem', 
+    embedCode: '<!-- REPLACE_WITH_SWEET_LOVE_SOUNDCLOUD_EMBED --><div style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;"><p>SoundCloud embed for Sweet Love will appear here</p><p>Upload to SoundCloud and replace this placeholder</p></div>'
+  },
+  { 
+    name: 'Totally', 
+    year: '2024', 
+    type: 'HD Video', 
+    embedCode: '<!-- REPLACE_WITH_TOTALLY_SOUNDCLOUD_EMBED --><div style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;"><p>SoundCloud embed for Totally will appear here</p><p>Upload to SoundCloud and replace this placeholder</p></div>'
+  },
+  { 
+    name: 'EBIDONGO', 
+    year: '2025', 
+    type: 'Latest Release', 
+    embedCode: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2181519679&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/atbriz256" title="Atbriz256" target="_blank" style="color: #cccccc; text-decoration: none;">Atbriz256</a> · <a href="https://soundcloud.com/atbriz256/ebidongo" title="ebidongo" target="_blank" style="color: #cccccc; text-decoration: none;">ebidongo</a></div>'
+  },
+  { 
+    name: 'EASY', 
+    year: '2025', 
+    type: 'Official Video', 
+    embedCode: '<!-- REPLACE_WITH_EASY_SOUNDCLOUD_EMBED --><div style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;"><p>SoundCloud embed for EASY will appear here</p><p>Upload to SoundCloud and replace this placeholder</p></div>'
+  },
+  { 
+    name: 'Loving A Bad Man', 
+    year: '2023', 
+    type: 'Single', 
+    embedCode: '<!-- REPLACE_WITH_LOVING_BAD_MAN_SOUNDCLOUD_EMBED --><div style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;"><p>SoundCloud embed for Loving A Bad Man will appear here</p><p>Upload to SoundCloud and replace this placeholder</p></div>'
+  },
+  { 
+    name: 'Na Na Na', 
+    year: '2023', 
+    type: 'Single', 
+    embedCode: '<!-- REPLACE_WITH_NANANA_SOUNDCLOUD_EMBED --><div style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;"><p>SoundCloud embed for Na Na Na will appear here</p><p>Upload to SoundCloud and replace this placeholder</p></div>'
+  }
 ];
 
 // ======================
-// VIDEOS (your list)
+// VIDEOS with YouTube Embed Placeholders
 // ======================
 const videos = [
-  { title: 'EBIDONGO', year: '2025', type: 'Latest Release', filename: 'ebidongo.mp4' },
-  { title: 'EASY', year: '2025', type: 'Official Video', filename: 'easy.mp4' },
-  { title: 'Totally', year: '2024', type: 'HD Video', filename: 'totally.mp4' },
-  { title: 'Gumpe', year: '2024', type: 'HD Video', filename: 'Gumpe.mp4' },
-  { title: 'Loving-a-Bad-Man', year: '2024', type: 'HD Video', filename: 'Loving-a-Bad-Man.mp4' },
-  { title: 'Nanana', year: '2024', type: 'ft. Webby Snr & Precocious', filename: 'Nanana.mp4' },
-  { title: 'Okukwagala', year: '2023', type: 'ft. Shasha bei African', filename: 'Okukwagala.mp4' },
-  { title: 'Sweet Love', year: '2023', type: 'Romantic Anthem', filename: 'sweet-love.mp4' },
-  { title: 'Zikarugaho', year: '2023', type: 'Dancehall Banger', filename: 'Zikarugaho.mp4' },
-  { title: 'Miss Yo Love', year: '2019', type: 'International Hit', filename: 'miss-yo-love.mp4' },
-  { title: 'Mataala', year: '2017', type: 'Breakout Hit', filename: 'mataala.mp4' }
+  { 
+    title: 'EBIDONGO', 
+    year: '2025', 
+    type: 'Latest Release', 
+    embedCode: '<!-- REPLACE_WITH_EBIDONGO_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for EBIDONGO will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'EASY', 
+    year: '2025', 
+    type: 'Official Video', 
+    embedCode: '<!-- REPLACE_WITH_EASY_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for EASY will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Totally', 
+    year: '2024', 
+    type: 'HD Video', 
+    embedCode: '<!-- REPLACE_WITH_TOTALLY_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Totally will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Gumpe', 
+    year: '2024', 
+    type: 'HD Video', 
+    embedCode: '<!-- REPLACE_WITH_GUMPE_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Gumpe will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Loving-a-Bad-Man', 
+    year: '2024', 
+    type: 'HD Video', 
+    embedCode: '<!-- REPLACE_WITH_LOVING_BAD_MAN_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Loving-a-Bad-Man will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Nanana', 
+    year: '2024', 
+    type: 'ft. Webby Snr & Precocious', 
+    embedCode: '<!-- REPLACE_WITH_NANANA_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Nanana will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Okukwagala', 
+    year: '2023', 
+    type: 'ft. Shasha bei African', 
+    embedCode: '<!-- REPLACE_WITH_OKUKWAGALA_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Okukwagala will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Sweet Love', 
+    year: '2023', 
+    type: 'Romantic Anthem', 
+    embedCode: '<!-- REPLACE_WITH_SWEET_LOVE_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Sweet Love will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Zikarugaho', 
+    year: '2023', 
+    type: 'Dancehall Banger', 
+    embedCode: '<!-- REPLACE_WITH_ZIKARUGAHO_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Zikarugaho will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Miss Yo Love', 
+    year: '2019', 
+    type: 'International Hit', 
+    embedCode: '<!-- REPLACE_WITH_MISS_YO_LOVE_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Miss Yo Love will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  },
+  { 
+    title: 'Mataala', 
+    year: '2017', 
+    type: 'Breakout Hit', 
+    embedCode: '<!-- REPLACE_WITH_MATAALA_YOUTUBE_EMBED --><div style="text-align: center; padding: 40px; background: #f0f0f0; border-radius: 10px;"><p>YouTube embed for Mataala will appear here</p><p>Upload to YouTube and replace this placeholder</p></div>'
+  }
 ];
+
+// ======================
+// COMMENTS SYSTEM (Basic Implementation)
+// ======================
+const comments = {
+  // In a real app, this would be stored in a database
+  audio: {},
+  video: {},
+  
+  init() {
+    this.loadComments();
+  },
+  
+  loadComments() {
+    // Load from localStorage (temporary solution)
+    const saved = localStorage.getItem('deuzoComments');
+    if (saved) {
+      const data = JSON.parse(saved);
+      this.audio = data.audio || {};
+      this.video = data.video || {};
+    }
+  },
+  
+  saveComments() {
+    localStorage.setItem('deuzoComments', JSON.stringify({
+      audio: this.audio,
+      video: this.video
+    }));
+  },
+  
+  addComment(type, itemId, comment) {
+    if (!this[type][itemId]) {
+      this[type][itemId] = [];
+    }
+    
+    this[type][itemId].push({
+      id: Date.now(),
+      text: comment,
+      timestamp: new Date().toLocaleString(),
+      likes: 0
+    });
+    
+    this.saveComments();
+    this.displayComments(type, itemId);
+    trackEvent('Comments', 'Add Comment', `${type}-${itemId}`);
+  },
+  
+  displayComments(type, itemId) {
+    const container = document.getElementById('commentsContainer');
+    if (!container) return;
+    
+    const commentsList = this[type][itemId] || [];
+    
+    container.innerHTML = commentsList.map(comment => `
+      <div class="comment">
+        <div class="comment-text">${comment.text}</div>
+        <div class="comment-meta">
+          <span class="comment-time">${comment.timestamp}</span>
+          <button class="comment-like" onclick="comments.likeComment('${type}', '${itemId}', ${comment.id})">
+            <i class="fas fa-heart"></i> ${comment.likes}
+          </button>
+        </div>
+      </div>
+    `).join('');
+    
+    if (commentsList.length === 0) {
+      container.innerHTML = '<p class="no-comments">No comments yet. Be the first to comment!</p>';
+    }
+  },
+  
+  likeComment(type, itemId, commentId) {
+    const comment = this[type][itemId]?.find(c => c.id === commentId);
+    if (comment) {
+      comment.likes++;
+      this.saveComments();
+      this.displayComments(type, itemId);
+      trackEvent('Comments', 'Like Comment', `${type}-${itemId}`);
+    }
+  }
+};
 
 // ======================
 // INIT
 // ======================
 document.addEventListener('DOMContentLoaded', () => {
-  audioPlayer.init();
+  // Initialize comments system
+  comments.init();
+  
+  // Remove old audio player init since we're using SoundCloud now
+  // audioPlayer.init(); // COMMENTED OUT - Using SoundCloud embeds instead
+  
   populateMusicGrid();
   populateVideoGrid();
   autoLoadFirstVideo();
@@ -138,8 +301,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Keyboard shortcuts
-  document.addEventListener('keydown', handleKeyboardShortcuts);
+  // Comments form
+  const commentForm = document.getElementById('commentForm');
+  if (commentForm) {
+    commentForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const commentInput = document.getElementById('commentInput');
+      const comment = commentInput.value.trim();
+      
+      if (comment) {
+        const currentMediaType = document.body.getAttribute('data-current-media-type') || 'audio';
+        const currentMediaId = document.body.getAttribute('data-current-media-id') || 'default';
+        
+        comments.addComment(currentMediaType, currentMediaId, comment);
+        commentInput.value = '';
+        
+        alert('Comment added successfully!');
+      }
+    });
+  }
+
+  // Keyboard shortcuts - COMMENTED OUT since we're using embeds
+  // document.addEventListener('keydown', handleKeyboardShortcuts);
 });
 
 // ======================
@@ -168,8 +351,9 @@ function trackEvent(category, action, label) {
 }
 
 // ======================
-// Keyboard Shortcuts
+// Keyboard Shortcuts - COMMENTED OUT for now
 // ======================
+/*
 function handleKeyboardShortcuts(e) {
   // Ignore if user is typing in input fields
   if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
@@ -177,19 +361,17 @@ function handleKeyboardShortcuts(e) {
   switch(e.code) {
     case 'Space':
       e.preventDefault();
-      audioPlayer.togglePlay();
-      trackEvent('Keyboard', 'Play/Pause', 'Spacebar');
+      // audioPlayer.togglePlay(); // Not applicable with SoundCloud embeds
       break;
     case 'ArrowRight':
-      audioPlayer.nextTrack();
-      trackEvent('Keyboard', 'Next Track', 'Arrow Right');
+      // audioPlayer.nextTrack(); // Not applicable with SoundCloud embeds
       break;
     case 'ArrowLeft':
-      audioPlayer.previousTrack();
-      trackEvent('Keyboard', 'Previous Track', 'Arrow Left');
+      // audioPlayer.previousTrack(); // Not applicable with SoundCloud embeds
       break;
   }
 }
+*/
 
 // ======================
 // Populate Music Grid
@@ -203,7 +385,7 @@ function populateMusicGrid() {
     trackCard.className = 'track-card';
     trackCard.setAttribute('data-index', index);
     trackCard.onclick = () => {
-      playTrack(track, index);
+      playSoundCloudTrack(track, index);
       trackEvent('Music', 'Play Track', track.name);
     };
     
@@ -230,7 +412,7 @@ function populateVideoGrid() {
     if (index === 0) videoCard.classList.add('active');
     
     videoCard.onclick = () => {
-      playVideo(video, index);
+      playYouTubeVideo(video, index);
       trackEvent('Video', 'Play Video', video.title);
     };
     
@@ -248,194 +430,82 @@ function populateVideoGrid() {
 }
 
 // ======================
-// Audio Player
+// SoundCloud Player
 // ======================
-const audioPlayer = {
-  currentTrack: null,
-  currentTrackIndex: -1,
-  isPlaying: false,
-  audio: new Audio(),
-  progress: document.getElementById('progress'),
-  currentTimeEl: document.getElementById('currentTime'),
-  durationEl: document.getElementById('duration'),
-  volumeControl: document.getElementById('volume'),
-  currentTrackEl: document.getElementById('currentTrack'),
-  playBtn: document.getElementById('playBtn'),
-  prevBtn: document.getElementById('prevBtn'),
-  nextBtn: document.getElementById('nextBtn'),
-  progressBar: document.getElementById('progressBar'),
-  audioLoading: document.getElementById('audioLoading'),
-
-  init() {
-    this.playBtn.addEventListener('click', () => this.togglePlay());
-    this.prevBtn.addEventListener('click', () => this.previousTrack());
-    this.nextBtn.addEventListener('click', () => this.nextTrack());
-    this.volumeControl.addEventListener('input', () => this.setVolume());
-
-    this.progressBar.addEventListener('click', e => {
-      if (!this.audio.duration) return;
-      const clickPos = (e.pageX - this.progressBar.getBoundingClientRect().left) / this.progressBar.offsetWidth;
-      this.audio.currentTime = clickPos * this.audio.duration;
-    });
-
-    // Audio event listeners
-    this.audio.addEventListener('loadstart', () => this.showLoading());
-    this.audio.addEventListener('loadedmetadata', () => {
-      this.durationEl.textContent = this.formatTime(this.audio.duration);
-      this.hideLoading();
-    });
-    this.audio.addEventListener('timeupdate', () => this.updateProgress());
-    this.audio.addEventListener('ended', () => this.nextTrack());
-    this.audio.addEventListener('error', (e) => this.handleAudioError(e));
-
-    this.setVolume();
-  },
-
-  showLoading() {
-    if (this.audioLoading) {
-      this.audioLoading.style.display = 'block';
-      this.playBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
-    }
-  },
-
-  hideLoading() {
-    if (this.audioLoading) {
-      this.audioLoading.style.display = 'none';
-    }
-  },
-
-  handleAudioError(e) {
-    console.error('Audio error:', e);
-    this.hideLoading();
-    if (this.currentTrack) {
-      alert(`Error loading audio: ${this.currentTrack.name}. The file may be missing or corrupted.`);
-    }
-    this.playBtn.innerHTML = '<i class="fas fa-play"></i>';
-    this.isPlaying = false;
-  },
-
-  playTrack(track, index) {
-    // Show loading state
-    this.showLoading();
-
-    // Stop video if playing
-    const videoEl = document.getElementById('mainVideo');
-    if (videoEl && !videoEl.paused) {
-      videoEl.pause();
-      videoEl.currentTime = 0;
-    }
-
-    // Update UI
-    document.querySelectorAll('.track-card').forEach(card => card.classList.remove('active'));
-    const trackCard = document.querySelector(`.track-card[data-index="${index}"]`);
-    if (trackCard) trackCard.classList.add('active');
-
-    this.currentTrack = track;
-    this.currentTrackIndex = index;
-    this.currentTrackEl.textContent = `${track.name} (${track.year})`;
-
-    // Load and play audio
-    this.audio.src = `audio/${track.filename}`;
-    this.audio.currentTime = 0;
-    
-    this.play().catch(e => {
-      console.error('Play failed:', e);
-      this.handleAudioError(e);
-    });
-
-    // Track event
-    trackEvent('Audio', 'Play Track', track.name);
-  },
-
-  togglePlay() {
-    if (this.isPlaying) this.pause();
-    else this.play();
-  },
-
-  async play() {
-    if (!this.currentTrack) {
-      this.playTrack(tracks[0], 0);
-      return;
-    }
-
-    try {
-      this.isPlaying = true;
-      this.playBtn.innerHTML = '<i class="fas fa-pause"></i>';
-      await this.audio.play();
-
-      // Update mini player
-      document.getElementById('miniTrack').textContent = `${this.currentTrack.name} (${this.currentTrack.year})`;
-      document.getElementById('miniPlayBtn').innerHTML = '<i class="fas fa-pause"></i>';
-      
-      trackEvent('Audio', 'Play', this.currentTrack.name);
-    } catch (error) {
-      console.error('Play error:', error);
-      this.isPlaying = false;
-      this.playBtn.innerHTML = '<i class="fas fa-play"></i>';
-    }
-  },
-
-  pause() {
-    this.isPlaying = false;
-    this.playBtn.innerHTML = '<i class="fas fa-play"></i>';
-    this.audio.pause();
-
-    // Update mini player
-    document.getElementById('miniPlayBtn').innerHTML = '<i class="fas fa-play"></i>';
-    
-    trackEvent('Audio', 'Pause', this.currentTrack?.name);
-  },
-
-  previousTrack() {
-    const prev = this.currentTrackIndex > 0 ? this.currentTrackIndex - 1 : tracks.length - 1;
-    this.playTrack(tracks[prev], prev);
-  },
-
-  nextTrack() {
-    const next = this.currentTrackIndex < tracks.length - 1 ? this.currentTrackIndex + 1 : 0;
-    this.playTrack(tracks[next], next);
-  },
-
-  setVolume() {
-    this.audio.volume = this.volumeControl.value / 100;
-  },
-
-  updateProgress() {
-    if (this.audio.duration) {
-      const percent = (this.audio.currentTime / this.audio.duration) * 100;
-      this.progress.style.width = `${percent}%`;
-      this.currentTimeEl.textContent = this.formatTime(this.audio.currentTime);
-    }
-  },
-
-  formatTime(seconds) {
-    if (isNaN(seconds)) return '0:00';
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+function playSoundCloudTrack(track, index) {
+  // Stop video if playing
+  const videoContainer = document.getElementById('videoPlayerContainer');
+  if (videoContainer) {
+    videoContainer.style.display = 'none';
   }
-};
 
-function playTrack(track, index) {
-  audioPlayer.playTrack(track, index);
+  // Update UI
+  document.querySelectorAll('.track-card').forEach(card => card.classList.remove('active'));
+  const trackCard = document.querySelector(`.track-card[data-index="${index}"]`);
+  if (trackCard) trackCard.classList.add('active');
+
+  // Create or update SoundCloud player container
+  let playerContainer = document.getElementById('soundcloudPlayer');
+  if (!playerContainer) {
+    playerContainer = document.createElement('div');
+    playerContainer.id = 'soundcloudPlayer';
+    playerContainer.className = 'soundcloud-player';
+    document.querySelector('.audio-player').appendChild(playerContainer);
+  }
+
+  // Show the player container
+  playerContainer.style.display = 'block';
+
+  // Insert the embed code
+  playerContainer.innerHTML = `
+    <div class="current-track-info">
+      <h3>Now Playing: ${track.name}</h3>
+      <p>${track.year} • ${track.type}</p>
+    </div>
+    ${track.embedCode}
+    <div class="comments-section">
+      <h4>Comments</h4>
+      <div id="commentsContainer"></div>
+      <form id="commentForm" class="comment-form">
+        <textarea id="commentInput" placeholder="Add a comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+    </div>
+  `;
+
+  // Set current media for comments
+  document.body.setAttribute('data-current-media-type', 'audio');
+  document.body.setAttribute('data-current-media-id', track.name);
+
+  // Load comments for this track
+  comments.displayComments('audio', track.name);
+
+  // Re-initialize comment form for this track
+  const commentForm = document.getElementById('commentForm');
+  if (commentForm) {
+    commentForm.onsubmit = (e) => {
+      e.preventDefault();
+      const commentInput = document.getElementById('commentInput');
+      const comment = commentInput.value.trim();
+      
+      if (comment) {
+        comments.addComment('audio', track.name, comment);
+        commentInput.value = '';
+      }
+    };
+  }
+
+  trackEvent('SoundCloud', 'Play Track', track.name);
 }
 
 // ======================
-// Video Player
+// YouTube Video Player
 // ======================
-function playVideo(video, index) {
-  const videoPlayer = document.getElementById('mainVideo');
-  const videoTitle = document.getElementById('currentVideoTitle');
-  const videoDesc = document.getElementById('currentVideoDesc');
-  const videoLoading = document.getElementById('videoLoading');
-
-  // Show loading
-  if (videoLoading) videoLoading.style.display = 'block';
-
-  // Stop audio if playing
-  if (audioPlayer.audio && !audioPlayer.audio.paused) {
-    audioPlayer.pause();
-    audioPlayer.audio.currentTime = 0;
+function playYouTubeVideo(video, index) {
+  // Hide audio player if visible
+  const audioContainer = document.getElementById('soundcloudPlayer');
+  if (audioContainer) {
+    audioContainer.style.display = 'none';
   }
 
   // Update UI
@@ -443,49 +513,70 @@ function playVideo(video, index) {
   const videoCard = document.querySelector(`.video-card[data-video-index="${index}"]`);
   if (videoCard) videoCard.classList.add('active');
 
-  // Set video source and metadata
-  videoPlayer.src = `videos/${video.filename}`;
-  videoTitle.textContent = video.title;
-  videoDesc.textContent = `${video.year} • ${video.type}`;
+  // Create or update YouTube player container
+  let playerContainer = document.getElementById('videoPlayerContainer');
+  if (!playerContainer) {
+    playerContainer = document.createElement('div');
+    playerContainer.id = 'videoPlayerContainer';
+    playerContainer.className = 'video-player-container';
+    document.querySelector('.video-player-section').appendChild(playerContainer);
+  }
 
-  // Error handling
-  videoPlayer.onerror = () => {
-    console.error('Error loading video:', video.filename);
-    if (videoLoading) videoLoading.style.display = 'none';
-    alert(`Error loading video: ${video.title}. The file may be missing or corrupted.`);
-  };
+  // Show the player container
+  playerContainer.style.display = 'block';
 
-  videoPlayer.onloadeddata = () => {
-    if (videoLoading) videoLoading.style.display = 'none';
-  };
+  // Insert the embed code
+  playerContainer.innerHTML = `
+    <div class="current-video-info">
+      <h3>Now Playing: ${video.title}</h3>
+      <p>${video.year} • ${video.type}</p>
+    </div>
+    <div class="video-embed">
+      ${video.embedCode}
+    </div>
+    <div class="comments-section">
+      <h4>Comments</h4>
+      <div id="commentsContainer"></div>
+      <form id="commentForm" class="comment-form">
+        <textarea id="commentInput" placeholder="Add a comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+    </div>
+  `;
 
-  // Play video
-  videoPlayer.play().catch(e => {
-    console.warn('Video play error:', e);
-    if (videoLoading) videoLoading.style.display = 'none';
-  });
+  // Set current media for comments
+  document.body.setAttribute('data-current-media-type', 'video');
+  document.body.setAttribute('data-current-media-id', video.title);
 
-  trackEvent('Video', 'Play Video', video.title);
+  // Load comments for this video
+  comments.displayComments('video', video.title);
+
+  // Re-initialize comment form for this video
+  const commentForm = document.getElementById('commentForm');
+  if (commentForm) {
+    commentForm.onsubmit = (e) => {
+      e.preventDefault();
+      const commentInput = document.getElementById('commentInput');
+      const comment = commentInput.value.trim();
+      
+      if (comment) {
+        comments.addComment('video', video.title, comment);
+        commentInput.value = '';
+      }
+    };
+  }
+
+  trackEvent('YouTube', 'Play Video', video.title);
 }
 
 function autoLoadFirstVideo() {
-  if (videos.length > 0) playVideo(videos[0], 0);
-}
-
-function toggleFullscreen() {
-  const videoPlayer = document.getElementById('mainVideo');
-  if (videoPlayer.requestFullscreen) {
-    videoPlayer.requestFullscreen();
-  } else if (videoPlayer.webkitRequestFullscreen) {
-    videoPlayer.webkitRequestFullscreen();
-  } else if (videoPlayer.msRequestFullscreen) {
-    videoPlayer.msRequestFullscreen();
-  }
+  if (videos.length > 0) playYouTubeVideo(videos[0], 0);
 }
 
 // ======================
-// Mini Player Logic
+// Mini Player Logic - COMMENTED OUT for now
 // ======================
+/*
 const miniPlayer = document.getElementById('miniPlayer');
 const miniPlayBtn = document.getElementById('miniPlayBtn');
 const miniNextBtn = document.getElementById('miniNextBtn');
@@ -523,3 +614,36 @@ if (miniCloseBtn) {
     trackEvent('Mini Player', 'Close', 'Close Button');
   });
 }
+*/
+
+// ======================
+// INSTRUCTIONS FOR YOU:
+// ======================
+/*
+INSTRUCTIONS FOR SOUNDCLOUD:
+1. Upload each song to SoundCloud
+2. Get the embed code for each track
+3. Replace the placeholder embedCode in the tracks array
+4. Example SoundCloud embed format:
+   <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+INSTRUCTIONS FOR YOUTUBE:
+1. Upload each video to YouTube
+2. Get the embed code for each video
+3. Replace the placeholder embedCode in the videos array
+4. Example YouTube embed format:
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+COMMENTS SYSTEM:
+- Comments are stored in browser localStorage (temporary)
+- In production, you'd need a backend database
+- Each audio track and video has its own comment thread
+- Users can like comments
+
+NEXT STEPS:
+1. Upload all audio files to SoundCloud
+2. Upload all video files to YouTube
+3. Replace all placeholder embed codes with real ones
+4. Remove large audio/video files from your Git repository
+5. Push the updated code to GitHub
+*/
